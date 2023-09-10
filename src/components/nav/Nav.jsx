@@ -1,21 +1,17 @@
 import React from "react";
-import Button from "../../UI/Button/Button";
+import { useMediaQuery } from "react-responsive";
 
-import styles from "./Nav.module.css";
+import DesktopNav from "./DesktopNav";
+import MobileNav from "./MobileNav";
 
 const Nav = () => {
+  const isMobile = useMediaQuery({ query: "(max-width:468px)" });
+
   return (
-    <nav>
-      <div></div>
-      <ul className={styles.items_container}>
-        <li className={styles.items}>PROFILE</li>
-        <li className={styles.items}>EXPERIENCE</li>
-        <li className={styles.items}>PROJECTS</li>
-      </ul>
-      <div className={styles.contact_container}>
-        <Button>CONTACT</Button>
-      </div>
-    </nav>
+    <React.Fragment>
+      {!isMobile && <DesktopNav />}
+      {isMobile && <MobileNav />}
+    </React.Fragment>
   );
 };
 export default Nav;

@@ -14,3 +14,17 @@
   width: 8%;
   left: 1rem;
 }
+
+.items__container {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.items__container li:last-child {
+  color: #2cc77c;
+}

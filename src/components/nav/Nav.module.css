@@ -1,2 +1,43 @@
 nav {
+  display: grid;
+  grid-template-columns: 4fr 4fr 2fr;
+  position: fixed;
+  height: 4rem;
+  width: 100%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.items_container,
+.contact_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.items {
+  position: relative;
+}
+.items::after {
+  position: absolute;
+  bottom: -2px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: black;
+  transition: width 200ms ease-in-out;
+  border-radius: 1rem;
+}
+.items:hover::after {
+  width: 100%;
+}
+.items_container {
+  font-weight: 700;
+  list-style: none;
+}
+
+@media screen and (max-width: 678px) {
+  nav {
+    grid-template-columns: 1fr 4fr 2fr;
+  }
 }

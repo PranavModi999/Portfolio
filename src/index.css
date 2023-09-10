@@ -4,13 +4,17 @@
   padding: 0;
 }
 body {
+  color: gray;
   background: #f1f1f1;
-  margin: 0;
   font-family: "Quicksand", Cambria, Cochin, Georgia, Times, "Times New Roman";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  /* background: lightgreen; */
+  height: 2000px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

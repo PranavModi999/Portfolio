@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { useMediaQuery } from "react-responsive";
 import Overlay from "./UI/Overlay/Overlay";
 import Nav from "./components/nav/Nav";
+import Profile from "./components/profile/Profile";
 
 function App() {
   const [overlayState, setOverlayState] = useState(false);
@@ -26,6 +27,7 @@ function App() {
           document.getElementById("overlay")
         )}
       <Nav onClose={overlayCloseHandler} />
+      <Profile />
     </div>
   );
 }

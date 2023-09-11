@@ -1,6 +1,6 @@
 nav {
   display: grid;
-  grid-template-columns: 4fr 4fr 2fr;
+  grid-template-columns: 3fr 4fr 2fr;
   position: fixed;
   height: 4rem;
   width: 100%;
@@ -14,22 +14,26 @@ nav {
 }
 .items {
   position: relative;
+  transition: color 200ms ease-in-out;
 }
 .items::after {
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   margin: auto;
   left: 0;
   right: 0;
   content: "";
   width: 0%;
-  height: 2px;
-  background: black;
+  background: #2cc77c;
+  height: 3.2px;
   transition: width 200ms ease-in-out;
   border-radius: 1rem;
 }
 .items:hover::after {
   width: 100%;
+}
+.items:hover {
+  color: #2cc77c;
 }
 .items_container {
   font-weight: 700;
@@ -48,7 +52,7 @@ nav {
 
 @media screen and (max-width: 678px) {
   nav {
-    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-columns: 32px 4fr 2fr;
   }
 }
 @media screen and (max-width: 468px) {

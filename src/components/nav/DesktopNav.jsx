@@ -11,6 +11,7 @@ const DesktopNav = () => {
         <li className={styles.items}>PROFILE</li>
         <li className={styles.items}>EXPERIENCE</li>
         <li className={styles.items}>PROJECTS</li>
+        <li className={styles.items}>RESUME</li>
       </ul>
       <div className={styles.contact_container}>
         <Button>CONTACT</Button>

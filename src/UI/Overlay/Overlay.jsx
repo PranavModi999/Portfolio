@@ -1,13 +1,13 @@
 import React from "react";
+import ReactDOM from "react-dom";
+import { useMediaQuery } from "react-responsive";
+import styles from "./Overlay.module.css";
 import closeIcon from "./close_icon.svg";
 
-import styles from "./Overlay.module.css";
-
-const Overlay = (props) => {
+const OverlayLayout = (props) => {
   const handleClose = () => {
     props.onClose();
   };
-
   return (
     <div className={styles.overlay} onClick={handleClose}>
       {props.isCloseVisible && (
@@ -34,6 +34,23 @@ const Overlay = (props) => {
         <li>CONTACT</li>
       </ul>
     </div>
+  );
+};
+const Overlay = (props) => {
+  const isMobile = useMediaQuery({ query: "(max-width:468px)" });
+
+  return (
+    <React.Fragment>
+      {isMobile &&
+        props.overlayState &&
+        ReactDOM.createPortal(
+          <OverlayLayout
+            isCloseVisible={isMobile}
+            onClose={props.onClose}
+          ></OverlayLayout>,
+          document.getElementById("overlay")
+        )}
+    </React.Fragment>
   );
 };
 

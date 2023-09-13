@@ -1,15 +1,10 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import { useMediaQuery } from "react-responsive";
 import Overlay from "./UI/Overlay/Overlay";
 import Nav from "./components/nav/Nav";
 import Profile from "./components/profile/Profile";
 
 function App() {
   const [overlayState, setOverlayState] = useState(false);
-
-  const isMobile = useMediaQuery({ query: "(max-width:468px)" });
-
   const overlayCloseHandler = () => {
     setOverlayState((state) => {
       return !state;
@@ -17,17 +12,10 @@ function App() {
   };
   return (
     <div className="App">
-      {isMobile &&
-        overlayState &&
-        ReactDOM.createPortal(
-          <Overlay
-            isCloseVisible={isMobile}
-            onClose={overlayCloseHandler}
-          ></Overlay>,
-          document.getElementById("overlay")
-        )}
+      <Overlay overlayState={overlayState} onClose={overlayCloseHandler} />
       <Nav onClose={overlayCloseHandler} />
       <Profile />
+      {/* <Education /> */}
     </div>
   );
 }

@@ -49,7 +49,7 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .profile_main{
+  .profile_main {
     width: 50%;
     align-self: center;
     margin: 0 auto;

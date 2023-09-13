@@ -4,6 +4,8 @@ import ProfileMain from "./profile_main.png";
 import styles from "./Profile.module.css";
 
 const Profile = () => {
+
+  
   return (
     <div className={styles.profile}>
       <section className={styles.left_container}>

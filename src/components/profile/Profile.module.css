@@ -2,6 +2,8 @@
   position: relative;
   background-image: url("./bg_profile.jpg");
   z-index: -10;
+  transform: translateZ(-10px);
+  background-attachment: fixed;
 }
 .profile_main {
   width: 28%;

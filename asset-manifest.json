@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.9e0a5e86.css",
-    "main.js": "/Portfolio/static/js/main.b7fb9cd0.js",
+    "main.css": "/Portfolio/static/css/main.00aa8fba.css",
+    "main.js": "/Portfolio/static/js/main.f6d2b722.js",
     "static/media/profile_main.png": "/Portfolio/static/media/profile_main.3201bba61716c9d54bec.png",
     "static/media/bg_profile.jpg": "/Portfolio/static/media/bg_profile.9c1685e2ec7379c1c357.jpg",
+    "static/media/github.png": "/Portfolio/static/media/github.b32ef956bb13855b0d52.png",
+    "static/media/linkedin.png": "/Portfolio/static/media/linkedin.4efa3cf3cc0e655a368f.png",
     "index.html": "/Portfolio/index.html",
     "static/media/close_icon.svg": "/Portfolio/static/media/close_icon.8ca3cd5e99711be7bee6932cc8decbb7.svg",
     "static/media/hamburger_icon.svg": "/Portfolio/static/media/hamburger_icon.0d3c31af19b9c297e9457042ec495ba1.svg",
-    "main.9e0a5e86.css.map": "/Portfolio/static/css/main.9e0a5e86.css.map",
-    "main.b7fb9cd0.js.map": "/Portfolio/static/js/main.b7fb9cd0.js.map"
+    "main.00aa8fba.css.map": "/Portfolio/static/css/main.00aa8fba.css.map",
+    "main.f6d2b722.js.map": "/Portfolio/static/js/main.f6d2b722.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e0a5e86.css",
-    "static/js/main.b7fb9cd0.js"
+    "static/css/main.00aa8fba.css",
+    "static/js/main.f6d2b722.js"
   ]
 }

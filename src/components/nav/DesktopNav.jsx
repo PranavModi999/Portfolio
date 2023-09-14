@@ -3,15 +3,20 @@ import Button from "../../UI/Button/Button";
 
 import styles from "./Nav.module.css";
 
-const DesktopNav = () => {
+const DesktopNav = (props) => {
   return (
     <nav>
       <div></div>
       <ul className={styles.items_container}>
-        <li className={styles.items}>PROFILE</li>
-        <li className={styles.items}>EXPERIENCE</li>
-        <li className={styles.items}>PROJECTS</li>
-        <li className={styles.items}>RESUME</li>
+        <li className={""} onClick={() => props.onTabClick(0)}>
+          PROFILE
+        </li>
+        <li className={""} onClick={() => props.onTabClick(1)}>
+          EXPERIENCE
+        </li>
+        <li className={""} onClick={() => props.onTabClick(2)}>
+          PROJECTS
+        </li>
       </ul>
       <div className={styles.contact_container}>
         <Button>CONTACT</Button>

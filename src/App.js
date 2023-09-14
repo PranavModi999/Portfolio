@@ -1,28 +1,36 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 import Overlay from "./UI/Overlay/Overlay";
 import Education from "./components/education/Education";
 import Nav from "./components/nav/Nav";
 import Profile from "./components/profile/Profile";
+import Project from "./components/project/Project";
 
 function App() {
+  const parllaxRef = useRef();
   const [overlayState, setOverlayState] = useState(false);
   const overlayCloseHandler = () => {
     setOverlayState((state) => {
       return !state;
     });
   };
+  const parallaxScrollHandler = (tab) => {
+    parllaxRef.current.scrollTo(tab);
+  };
   return (
     <React.Fragment>
       <Overlay overlayState={overlayState} onClose={overlayCloseHandler} />
-      <Nav onClose={overlayCloseHandler} />
-      <Parallax pages={2}>
+      <Nav onClose={overlayCloseHandler} onTabClick={parallaxScrollHandler} />
+      <Parallax pages={3} ref={parllaxRef}>
         <ParallaxLayer offset={0} speed={-0.2}>
           <Profile />
         </ParallaxLayer>
         <ParallaxLayer offset={1} factor={1} speed={0.2}>
           <Education />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2} factor={1} speed={0.2}>
+          <Project />
         </ParallaxLayer>
       </Parallax>
     </React.Fragment>

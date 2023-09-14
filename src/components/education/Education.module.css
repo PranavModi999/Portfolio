@@ -1,6 +1,5 @@
 .education_container {
   height: 1000px;
-  background-color: lightblue;
-  /* background-image: url("../profile//bg_profile.jpg"); */
-  /* background-attachment: fixed; */
+  background-color: #f1f1f1;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.2);
 }

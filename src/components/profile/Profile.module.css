@@ -5,10 +5,50 @@
   transform: translateZ(-10px);
   background-attachment: fixed;
 }
+.cv_button {
+  border: #2cc77c 2px solid;
+  color: #2cc77c;
+  font-size: 1rem;
+  padding: 10px 14px;
+  border-radius: 2rem;
+  /* transform: rotateZ(-5deg); */
+  margin-right: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+.linkedin,
+.github {
+  cursor: pointer;
+  width: 38px;
+  transition: transform 150ms ease-in-out, filter 150ms ease-in-out;
+}
+.linkedin:hover,
+.github:hover {
+  transform: scale(1.06);
+  filter: invert();
+}
+.cv_button:hover {
+  background-color: #2cc77c;
+  color: #f1f1f1;
+}
+.cv_container {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  width: 100%;
+  align-items: flex-end;
+  margin-bottom: 10%;
+  transform: rotateZ(-5deg);
+}
+.middle_col {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
 .profile_main {
   width: 28%;
   margin-top: 6%;
-  align-self: end;
   margin-right: 10%;
 }
 .left_container {
@@ -27,6 +67,7 @@
 }
 .title,
 .content {
+  margin-top: 2rem;
   text-align: center;
   /* margin: 1.4rem; */
   /* align-self: baseline; */

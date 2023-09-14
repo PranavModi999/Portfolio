@@ -1,6 +1,6 @@
 nav {
   display: grid;
-  grid-template-columns: 4fr 6fr 3fr;
+  grid-template-columns: 4fr 3fr 2fr;
   height: 4rem;
   position: fixed;
   width: 100%;
@@ -14,11 +14,12 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
-.items {
+.items_container li {
+  cursor: pointer;
   position: relative;
   transition: color 200ms ease-in-out;
 }
-.items::after {
+.items_container li::after {
   position: absolute;
   bottom: -4px;
   margin: auto;
@@ -31,10 +32,10 @@ nav {
   transition: width 200ms ease-in-out;
   border-radius: 1rem;
 }
-.items:hover::after {
+.items_container li:hover::after {
   width: 100%;
 }
-.items:hover {
+.items_container li:hover {
   color: #2cc77c;
 }
 .items_container {

@@ -26,12 +26,10 @@ function App() {
         <ParallaxLayer offset={0} speed={-0.2}>
           <Profile />
         </ParallaxLayer>
-        <ParallaxLayer offset={1} factor={1} speed={0.2}>
+        <ParallaxLayer offset={1} factor={2} speed={0.2}>
           <Education />
         </ParallaxLayer>
-        <ParallaxLayer offset={2} factor={1} speed={0.2}>
-          <Project />
-        </ParallaxLayer>
+        
       </Parallax>
     </React.Fragment>
   );

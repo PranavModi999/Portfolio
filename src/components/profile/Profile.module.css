@@ -1,11 +1,16 @@
 .profile {
   position: relative;
-  background-image: url("./bg_profile.jpg");
+  /* background-image: url("./bg_profile.jpg"); */
+  /* background-color: #e5e5f7; */
+  /* opacity: 0.8; */
+  background-image: radial-gradient(#2cc77c 0.5px, #f1f1f1 0.5px);
+  background-size: 10px 10px;
   z-index: -10;
   transform: translateZ(-10px);
   background-attachment: fixed;
 }
 .cv_button {
+  display: none;
   border: #2cc77c 2px solid;
   color: #2cc77c;
   font-size: 1rem;
@@ -14,14 +19,20 @@
   /* transform: rotateZ(-5deg); */
   margin-right: 1rem;
   font-weight: 500;
+  animation: pullUp 1.5s 1;
   cursor: pointer;
   transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
+.location {
+  width: 28px;
+}
 .linkedin,
 .github {
+  margin-top: 2rem;
   cursor: pointer;
   width: 38px;
   transition: transform 150ms ease-in-out, filter 150ms ease-in-out;
+  animation: pullUp 1.5s 1;
 }
 .linkedin:hover,
 .github:hover {
@@ -36,6 +47,7 @@
   display: flex;
   column-gap: 10px;
   justify-content: center;
+  font-size: 1.2rem;
   width: 100%;
   align-items: flex-end;
   margin-bottom: 10%;
@@ -43,6 +55,7 @@
 }
 .middle_col {
   display: flex;
+  animation: pullUp 1.5s 1;
   align-content: center;
   justify-content: space-between;
 }
@@ -69,6 +82,7 @@
 .content {
   margin-top: 2rem;
   text-align: center;
+  animation: pullUp 1s 1;
   /* margin: 1.4rem; */
   /* align-self: baseline; */
 }
@@ -103,5 +117,14 @@
     box-shadow: none;
     height: 120vh;
     transform: none;
+  }
+}
+
+@keyframes pullUp {
+  from {
+    transform: translateY(40px);
+  }
+  to {
+    transform: translateY(0px);
   }
 }

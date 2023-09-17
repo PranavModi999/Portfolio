@@ -1,5 +1,47 @@
-.education_container {
-  height: 1000px;
+.staggered_grid {
   background-color: #f1f1f1;
   box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+}
+.staggered_grid div {
+  width: 100%;
+  /* height: 400px; */
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.staggered_grid div img {
+  width: 100%;
+}
+.grid_itm {
+  background-color: lightblue;
+}
+.grid_conestoga {
+  background-color: lightpink;
+}
+.grid_smartNode {
+  width: 100%;
+  grid-column: span 2;
+  background-color: lightyellow;
+}
+
+.grid_shiraz {
+  background-color: lightgreen;
+}
+.grid_brainyBeam {
+  background-color: lightcoral;
+}
+
+@media screen and (max-width: 768px) {
+  .staggered_grid {
+    display: block;
+    grid-template-columns: 1fr;
+  }
+  .staggered_grid div {
+    height: 20vh;
+  }
 }

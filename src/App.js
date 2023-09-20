@@ -1,36 +1,32 @@
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 import Overlay from "./UI/Overlay/Overlay";
 import Education from "./components/education/Education";
 import Nav from "./components/nav/Nav";
 import Profile from "./components/profile/Profile";
-import Project from "./components/project/Project";
+
+import styles from "./App.module.css";
 
 function App() {
-  const parllaxRef = useRef();
   const [overlayState, setOverlayState] = useState(false);
   const overlayCloseHandler = () => {
     setOverlayState((state) => {
       return !state;
     });
   };
-  const parallaxScrollHandler = (tab) => {
-    parllaxRef.current.scrollTo(tab);
-  };
+
   return (
     <React.Fragment>
       <Overlay overlayState={overlayState} onClose={overlayCloseHandler} />
-      <Nav onClose={overlayCloseHandler} onTabClick={parallaxScrollHandler} />
-      <Parallax pages={3} ref={parllaxRef}>
-        <ParallaxLayer offset={0} speed={-0.2}>
+      <Nav onClose={overlayCloseHandler} />
+      <div className={styles.parallax_wrapper}>
+        <div className={styles.profile_container}>
           <Profile />
-        </ParallaxLayer>
-        <ParallaxLayer offset={1} factor={2} speed={0.2}>
+        </div>
+        <div className={styles.education_container}>
           <Education />
-        </ParallaxLayer>
-        
-      </Parallax>
+        </div>
+      </div>
     </React.Fragment>
   );
 }

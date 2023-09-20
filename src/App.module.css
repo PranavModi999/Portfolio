@@ -1,0 +1,14 @@
+.parallax_wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+.profile_container {
+  transform: translateZ(-10px) scale(2);
+  z-index: -1;
+}
+.education_container {
+  transform: translateZ(-0px) scale(1);
+  z-index: 1;
+}

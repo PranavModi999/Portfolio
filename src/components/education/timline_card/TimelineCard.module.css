@@ -1,0 +1,22 @@
+.timeline_card {
+  position: relative;
+  width: 32%;
+  margin: 100px;
+  padding: 2rem;
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+.timeline_card hr {
+  margin: 6px 0rem;
+}
+.timeline_card h2 {
+  color: #2cc77c;
+}
+.timeline_logo {
+  box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 1);
+  position: absolute;
+  left: -4rem;
+  top: 32%;
+  width: 3.2rem;
+  border-radius: 3rem;
+}

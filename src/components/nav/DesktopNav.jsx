@@ -8,15 +8,9 @@ const DesktopNav = (props) => {
     <nav>
       <div></div>
       <ul className={styles.items_container}>
-        <li className={""} onClick={() => props.onTabClick(0)}>
-          PROFILE
-        </li>
-        <li className={""} onClick={() => props.onTabClick(1)}>
-          EXPERIENCE
-        </li>
-        <li className={""} onClick={() => props.onTabClick(2)}>
-          PROJECTS
-        </li>
+        <li className={""}>PROFILE</li>
+        <li className={""}>EXPERIENCE</li>
+        <li className={""}>PROJECTS</li>
       </ul>
       <div className={styles.contact_container}>
         <Button>CONTACT</Button>

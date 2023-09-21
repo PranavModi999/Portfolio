@@ -2,7 +2,14 @@ import React from "react";
 
 import styles from "./TimelineCard.module.css";
 
-const TimeLineCard = ({ logo, title, subtitle, description, position }) => {
+const TimeLineCard = ({
+  logo,
+  title,
+  subtitle,
+  description,
+  position,
+  date,
+}) => {
   return (
     <div
       className={`${styles.card_container} ${
@@ -21,7 +28,9 @@ const TimeLineCard = ({ logo, title, subtitle, description, position }) => {
       />
       <div className={`${styles.timeline_card} `}>
         <h2>{title}</h2>
-        <small>{subtitle}</small>
+        <small>
+          {subtitle} | <i>{date}</i>
+        </small>
         <hr />
         <p>{description}</p>
       </div>

@@ -31,4 +31,14 @@
   margin-left: -3px;
   z-index: 1;
   background-color: #2cc77c;
+  /* animation: scrollLine 6s linear; */
 }
+
+/* @keyframes scrollLine {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+} */

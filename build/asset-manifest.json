@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.caa7d0c2.css",
-    "main.js": "/Portfolio/static/js/main.ce9d2de4.js",
+    "main.css": "/Portfolio/static/css/main.951b8194.css",
+    "main.js": "/Portfolio/static/js/main.1c0e9ebc.js",
     "static/media/profile_main.png": "/Portfolio/static/media/profile_main.3201bba61716c9d54bec.png",
     "static/media/conestoga.png": "/Portfolio/static/media/conestoga.eaa037818e7f890c88c5.png",
     "static/media/github.png": "/Portfolio/static/media/github.b32ef956bb13855b0d52.png",
@@ -10,11 +10,11 @@
     "static/media/location.svg": "/Portfolio/static/media/location.48b92ed28fe08807a3431668e34ac7eb.svg",
     "static/media/close_icon.svg": "/Portfolio/static/media/close_icon.8ca3cd5e99711be7bee6932cc8decbb7.svg",
     "static/media/hamburger_icon.svg": "/Portfolio/static/media/hamburger_icon.0d3c31af19b9c297e9457042ec495ba1.svg",
-    "main.caa7d0c2.css.map": "/Portfolio/static/css/main.caa7d0c2.css.map",
-    "main.ce9d2de4.js.map": "/Portfolio/static/js/main.ce9d2de4.js.map"
+    "main.951b8194.css.map": "/Portfolio/static/css/main.951b8194.css.map",
+    "main.1c0e9ebc.js.map": "/Portfolio/static/js/main.1c0e9ebc.js.map"
   },
   "entrypoints": [
-    "static/css/main.caa7d0c2.css",
-    "static/js/main.ce9d2de4.js"
+    "static/css/main.951b8194.css",
+    "static/js/main.1c0e9ebc.js"
   ]
 }

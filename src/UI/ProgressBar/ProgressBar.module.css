@@ -1,0 +1,18 @@
+.progress_title,
+.progress_bar {
+  text-transform: uppercase;
+  margin: 2rem auto;
+  text-align: center;
+}
+.progress_fill,
+.progress_bar {
+  height: 1rem;
+  border-radius: 1rem;
+}
+.progress_bar {
+  width: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.progress_fill {
+  background-color: #2cc77c;
+}

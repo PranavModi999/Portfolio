@@ -5,12 +5,19 @@
   flex-direction: column;
   padding-top: 1rem;
 }
+
+.description {
+  margin: 0 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
 .title {
   font-size: 2rem;
   font-family: "Montserrat";
   background-image: linear-gradient(90deg, #008080, #2cc77c);
   -webkit-background-clip: text;
   background-clip: text;
+  text-transform: uppercase;
   color: transparent;
   font-style: italic;
   margin: 2rem;
@@ -33,12 +40,3 @@
   background-color: #2cc77c;
   /* animation: scrollLine 6s linear; */
 }
-
-/* @keyframes scrollLine {
-  from {
-    height: 0%;
-  }
-  to {
-    height: 100%;
-  }
-} */

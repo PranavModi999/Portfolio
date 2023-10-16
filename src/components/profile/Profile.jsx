@@ -1,10 +1,12 @@
 import React from "react";
-import github from "./github.png";
-import linkedin from "./linkedin.png";
-import locationIcon from "./location.svg";
 import ProfileMain from "./profile_main.png";
 
 import styles from "./Profile.module.css";
+
+import github from "./github.png";
+import linkedin from "./linkedin.png";
+import locationIcon from "./location.svg";
+
 
 const Profile = () => {
   return (

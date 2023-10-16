@@ -6,6 +6,8 @@ import Nav from "./components/nav/Nav";
 import Profile from "./components/profile/Profile";
 
 import styles from "./App.module.css";
+import Project from "./components/project/Project";
+import PortfolioFooter from "./footer/PortfolioFooter";
 
 function App() {
   const [overlayState, setOverlayState] = useState(false);
@@ -26,6 +28,8 @@ function App() {
         <div className={styles.education_container}>
           <Education />
         </div>
+        <Project />
+        <PortfolioFooter />
       </div>
     </React.Fragment>
   );

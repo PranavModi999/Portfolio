@@ -1,57 +1,84 @@
-.footer_container {
+footer {
+  background: #f1f1f1;
+}
+.footer-top-line {
+  margin: 0px 28px;
+  /* padding: 10px; */
+  border-style: solid;
+  /* border-width: 2px; */
+  border-color: lightgray;
+}
+.logo-img {
+  width: 6%;
+}
+.main-footer {
+  margin: 20px 0px;
+  height: 25%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.middle-column {
   display: flex;
+  row-gap: 12px;
+  column-gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.left-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  flex-direction: column;
+}
+.right-column {
+  display: flex;
+  color: gray;
+  row-gap: 16px;
   flex-direction: column;
   align-items: center;
-  background: #2cc77c;
 }
-.line {
-  width: 80%;
-  margin-top: 1rem;
-  color: #1f1f1f;
-  background-color: #1f1f1f;
-  border: 1px solid #1f1f1f;
+.social {
+  text-align: center;
 }
-.cv_button {
-  /* display: none; */
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: #2cc77c 2px solid;
-  color: white;
-  width: max-content;
-  font-size: 1rem;
-  padding: 10px 14px;
-  /* border-radius: 2rem; */
-  background: #1f1f1f;
-  /* margin: auto; */
-  /* transform: rotateZ(-5deg); */
-  margin-right: 1rem;
-  font-weight: 500;
-  animation: pullUp 1.5s 1;
-  cursor: pointer;
-  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-}
-.linkedin,
-.github {
-  margin-top: 2rem;
-  cursor: pointer;
-  width: 38px;
-  transition: transform 150ms ease-in-out, filter 150ms ease-in-out;
-  animation: pullUp 1.5s 1;
-}
-.linkedin:hover,
-.github:hover {
-  transform: scale(1.06);
-  filter: invert();
-}
-.cv_button:hover {
-  background-color: #f1f1f1;
-  color: #2cc77c;
-}
-.cv_container {
+.right-column div {
   display: flex;
-  column-gap: 10px;
+  row-gap: 6px;
+  flex-direction: column;
+  align-items: center;
+}
+.left-column h4,
+.social h4,
+.right-column h4 {
+  /* text-decoration: underline; */
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: 1.2rem;
-  width: 100%;
-  align-items: flex-end;
+  align-items: center;
+  row-gap: 6px;
+  list-style: none;
+}
+.footer-links li a,
+.right-column div p {
+  cursor: pointer;
+  font-size: 1rem;
+  color: gray;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+.footer-links li a:hover,
+.right-column div p:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.copyrights {
+  padding: 12px 0px;
+  display: flex;
+  justify-content: center;
+  color: gray;
 }

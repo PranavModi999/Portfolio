@@ -2,14 +2,19 @@ footer {
   background: #f1f1f1;
 }
 .footer-top-line {
-  margin: 0px 28px;
+  margin: 20px 28px;
   /* padding: 10px; */
   border-style: solid;
   /* border-width: 2px; */
   border-color: lightgray;
 }
 .logo-img {
-  width: 6%;
+  width: 2rem;
+  transition: transform 150ms ease-in-out, filter 150ms ease-in-out;
+}
+.logo-img:hover {
+  transform: scale(1.06);
+  filter: invert();
 }
 .main-footer {
   margin: 20px 0px;
@@ -21,6 +26,7 @@ footer {
   display: flex;
   row-gap: 12px;
   column-gap: 12px;
+  margin-top: 12px;
   justify-content: center;
   align-items: center;
 }
@@ -78,7 +84,8 @@ footer {
 
 .copyrights {
   padding: 12px 0px;
-  display: flex;
+  /* display: flex; */
+  font-size: 1.2rem;
   justify-content: center;
   color: gray;
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Element } from "react-scroll";
 
 import Overlay from "./UI/Overlay/Overlay";
 import Education from "./components/education/Education";
@@ -6,8 +7,8 @@ import Nav from "./components/nav/Nav";
 import Profile from "./components/profile/Profile";
 
 import styles from "./App.module.css";
+import PortfolioFooter from "./components/footer/PortfolioFooter";
 import Project from "./components/project/Project";
-import PortfolioFooter from "./footer/PortfolioFooter";
 
 function App() {
   const [overlayState, setOverlayState] = useState(false);
@@ -29,7 +30,9 @@ function App() {
           <Education />
         </div>
         <Project />
-        <PortfolioFooter />
+        <Element id="contact-nav" name="contact-nav">
+          <PortfolioFooter />
+        </Element>
       </div>
     </React.Fragment>
   );

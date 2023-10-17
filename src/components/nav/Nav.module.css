@@ -5,7 +5,7 @@ nav {
   position: fixed;
   width: 100%;
   background-color: #f1f1f1;
-  /* box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
 .items_container,

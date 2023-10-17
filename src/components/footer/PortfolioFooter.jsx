@@ -2,8 +2,9 @@ import React from "react";
 
 import styles from "./PortfolioFooter.module.css";
 
-import github from "../components/profile/github.png";
-import linkedin from "../components/profile/linkedin.png";
+import github from "../profile/github.png";
+import instagram from "../profile/instagram.png";
+import linkedin from "../profile/linkedin.png";
 
 const PortfolioFooter = () => {
   return (
@@ -29,19 +30,33 @@ const PortfolioFooter = () => {
         </div>
         <div className={styles.social}>
           <h4>Socials</h4>
+
           <div className={styles["middle-column"]}>
-            <img
-              className={styles["logo-img"]}
-              src={github}
-              alt="LOGO"
-              srcset=""
-            />
-            <img
-              className={styles["logo-img"]}
-              src={linkedin}
-              alt="LOGO"
-              srcset=""
-            />
+            <a href="https://www.linkedin.com/in/modi-pranav/">
+              <img
+                src={linkedin}
+                className={styles["logo-img"]}
+                alt=""
+              />
+            </a>
+            <a href="https://www.instagram.com/modi.pranav767/">
+              <img
+                src={instagram}
+                className={styles["logo-img"]}
+                alt=""
+              />
+            </a>
+            <a href="https://github.com/PranavModi999">
+              <img
+                src={github}
+                className={styles["logo-img"]}
+                alt=""
+              />
+            </a>
+          </div>
+          <hr className={styles["footer-top-line"]} />
+          <div>
+            <p>thank you for exploring my portfolio website - © 2023</p>
           </div>
         </div>
         <div className={styles["right-column"]}>
@@ -53,9 +68,6 @@ const PortfolioFooter = () => {
         </div>
       </div>
       <hr className={styles["footer-top-line"]} />
-      <p className={styles["copyrights"]}>
-        Thank you for exploring my portfolio website - © 2023
-      </p>
     </footer>
   );
 };

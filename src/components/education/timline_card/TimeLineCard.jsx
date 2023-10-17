@@ -24,7 +24,6 @@ const TimeLineCard = ({
         }
         src={logo}
         alt=""
-        srcset=""
       />
       <div className={`${styles.timeline_card} `}>
         <h2>{title}</h2>

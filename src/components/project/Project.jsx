@@ -4,9 +4,9 @@ import ProjectCard from "./project_card/ProjectCard";
 
 import styles from "./Project.module.css";
 
-const Project = () => {
+const Project = React.forwardRef((_, ref) => {
   return (
-    <React.Fragment>
+    <div ref={ref}>
       <h1 className={styles.title}>My Projects</h1>
 
       <div className={styles.project_container}>
@@ -19,7 +19,7 @@ const Project = () => {
         <ProjectCard img={litHaven} />
         <ProjectCard img={litHaven} />
       </div>
-    </React.Fragment>
+    </div>
   );
-};
+});
 export default Project;

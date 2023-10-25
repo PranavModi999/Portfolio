@@ -5,13 +5,11 @@ import MobileNav from "./MobileNav";
 
 const Nav = (props) => {
   const isMobile = useMediaQuery({ query: "(max-width:468px)" });
- 
+
   return (
     <React.Fragment>
-      {!isMobile && <DesktopNav />}
-      {isMobile && (
-        <MobileNav onClose={props.onClose}  />
-      )}
+      {!isMobile && <DesktopNav onScrollClick={props.onScrollClick} />}
+      {isMobile && <MobileNav onClose={props.onClose} />}
     </React.Fragment>
   );
 };

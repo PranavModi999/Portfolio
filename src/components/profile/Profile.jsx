@@ -8,9 +8,9 @@ import instagram from "./instagram.png";
 import linkedin from "./linkedin.png";
 import locationIcon from "./location.svg";
 
-const Profile = () => {
+const Profile = React.forwardRef((_, ref) => {
   return (
-    <div className={styles.profile}>
+    <div className={styles.profile} ref={ref}>
       <section className={styles.left_container}>
         <div className={styles.middle_col}>
           <div className={styles.cv_container}>
@@ -41,5 +41,5 @@ const Profile = () => {
       </section>
     </div>
   );
-};
+});
 export default Profile;

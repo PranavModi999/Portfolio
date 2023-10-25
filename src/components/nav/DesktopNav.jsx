@@ -9,12 +9,12 @@ const DesktopNav = (props) => {
     <nav>
       <div></div>
       <ul className={styles.items_container}>
-        <li>PROFILE</li>
-        <li>EXPERIENCE</li>
-        <li>PROJECTS</li>
+        <li onClick={() => props.onScrollClick("PROFILE")}>PROFILE</li>
+        <li onClick={() => props.onScrollClick("EXPERIENCE")}>EXPERIENCE</li>
+        <li onClick={() => props.onScrollClick("PROJECTS")}>PROJECTS</li>
       </ul>
       <div className={styles.contact_container}>
-        <Button>CONTACT</Button>
+        <Button onClick={() => props.onScrollClick("CONTACT")}>CONTACT</Button>
       </div>
     </nav>
   );

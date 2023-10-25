@@ -2,13 +2,13 @@ import React from "react";
 import conestogaLogo from "./conestoga.png";
 import TimeLineCard from "./timline_card/TimeLineCard";
 
+import ProgressBar from "../../UI/ProgressBar/ProgressBar";
 import ScrollMotionComponent from "../../UI/ScollMotionComponent/ScrollMotionComponent";
 import styles from "./Education.module.css";
-import ProgressBar from "../../UI/ProgressBar/ProgressBar";
 
-const Education = () => {
+const Education = React.forwardRef((_, ref) => {
   return (
-    <section className={styles.education_container}>
+    <section ref={ref} className={styles.education_container}>
       <h1 className={styles.title}>Proficiency</h1>
       <p className={styles.description}>
         Using a combination of cutting-edge technologies and reliable
@@ -67,5 +67,5 @@ const Education = () => {
       </div>
     </section>
   );
-};
+});
 export default Education;

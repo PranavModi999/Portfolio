@@ -6,25 +6,25 @@ import github from "../profile/github.png";
 import instagram from "../profile/instagram.png";
 import linkedin from "../profile/linkedin.png";
 
-const PortfolioFooter = () => {
+const PortfolioFooter = React.forwardRef(({ onScrollClick }, ref) => {
   return (
-    <footer>
+    <footer ref={ref}>
       <hr className={styles["footer-top-line"]} />
       <div className={styles["main-footer"]}>
         <div className={styles["left-column"]}>
           <h4>Navigation</h4>
           <ul className={styles["footer-links"]}>
-            <li>
-              <a href="./index.html">Home</a>
+            <li onClick={() => onScrollClick("PROFILE")}>
+              <p>Profile</p>
             </li>
-            <li>
-              <a href="../pages/best_seller.html">Bestsellers</a>
+            <li onClick={() => onScrollClick("EXPERIENCE")}>
+              <p>Experience</p>
             </li>
-            <li>
-              <a href="../pages/club.html">Club</a>
+            <li onClick={() => onScrollClick("PROJECTS")}>
+              <p>Projects</p>
             </li>
-            <li>
-              <a href="../pages/about.html">About</a>
+            <li onClick={() => onScrollClick("CONTACT")}>
+              <p>Contact</p>
             </li>
           </ul>
         </div>
@@ -33,25 +33,13 @@ const PortfolioFooter = () => {
 
           <div className={styles["middle-column"]}>
             <a href="https://www.linkedin.com/in/modi-pranav/">
-              <img
-                src={linkedin}
-                className={styles["logo-img"]}
-                alt=""
-              />
+              <img src={linkedin} className={styles["logo-img"]} alt="" />
             </a>
             <a href="https://www.instagram.com/modi.pranav767/">
-              <img
-                src={instagram}
-                className={styles["logo-img"]}
-                alt=""
-              />
+              <img src={instagram} className={styles["logo-img"]} alt="" />
             </a>
             <a href="https://github.com/PranavModi999">
-              <img
-                src={github}
-                className={styles["logo-img"]}
-                alt=""
-              />
+              <img src={github} className={styles["logo-img"]} alt="" />
             </a>
           </div>
           <hr className={styles["footer-top-line"]} />
@@ -70,5 +58,5 @@ const PortfolioFooter = () => {
       <hr className={styles["footer-top-line"]} />
     </footer>
   );
-};
+});
 export default PortfolioFooter;

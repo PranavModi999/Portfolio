@@ -30,8 +30,10 @@ const TimeLineCard = ({
         <small>
           {subtitle} | <i>{date}</i>
         </small>
-        <hr />
-        <p>{description}</p>
+        <div className={styles.description}>
+          <hr />
+          <p>{description}</p>
+        </div>
       </div>
     </div>
   );

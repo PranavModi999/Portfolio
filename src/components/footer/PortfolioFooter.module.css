@@ -91,3 +91,15 @@ footer {
   justify-content: center;
   color: gray;
 }
+
+@media screen and (max-width: 768px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+  }
+  .left-column h4,
+  .right-column h4,
+  .social h4 {
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+  }
+}

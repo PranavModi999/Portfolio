@@ -42,3 +42,8 @@
 .linksHover:hover {
   color: #2cc77c;
 }
+@media screen and (max-width: 768px) {
+  .project {
+    width: 40%;
+  }
+}

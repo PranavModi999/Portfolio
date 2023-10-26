@@ -57,3 +57,16 @@
 .timeline_card:hover {
   background-color: lightblue;
 } */
+@media screen and (max-width: 678px) {
+  .description {
+    display: none;
+  }
+  .timeline_logo_left {
+    right: -8%;
+    width: 16%;
+  }
+  .timeline_logo_right {
+    left: -8%;
+    width: 16%;
+  }
+}

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Element } from "react-scroll";
 
 import Overlay from "./UI/Overlay/Overlay";
 import Education from "./components/education/Education";
@@ -30,9 +29,7 @@ function App() {
           <Education />
         </div>
         <Project />
-        <Element id="contact-nav" name="contact-nav">
-          <PortfolioFooter />
-        </Element>
+        <PortfolioFooter />
       </div>
     </React.Fragment>
   );

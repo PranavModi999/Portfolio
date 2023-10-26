@@ -1,7 +1,7 @@
 .profile {
   position: relative;
   /* background-image: url("./bg_profile.jpg"); */
-  /* background-color: #e5e5f7; */
+  /* background-color: red; */
   /* opacity: 0.8; */
   background-image: radial-gradient(#2cc77c 0.5px, #f1f1f1 0.5px);
   background-size: 10px 10px;
@@ -102,6 +102,7 @@
 }
 @media screen and (max-width: 678px) {
   .left_container {
+    margin-top: 20%;
     width: 80%;
   }
 }

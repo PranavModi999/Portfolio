@@ -12,3 +12,6 @@
   transform: translateZ(-0px) scale(1);
   z-index: 1;
 }
+
+@media screen and (max-width: 768px) {
+}

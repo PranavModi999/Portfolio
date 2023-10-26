@@ -113,6 +113,7 @@
     margin: 0 auto;
   }
   .left_container {
+    margin: 0 auto;
     justify-content: center;
     background: #f1f1f1;
     box-shadow: none;

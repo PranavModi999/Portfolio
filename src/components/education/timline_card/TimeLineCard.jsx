@@ -1,4 +1,5 @@
 import React from "react";
+import { isMobile } from "react-device-detect";
 
 import styles from "./TimelineCard.module.css";
 
@@ -10,6 +11,7 @@ const TimeLineCard = ({
   position,
   date,
 }) => {
+  if (isMobile) position = "left";
   return (
     <div
       className={`${styles.card_container} ${

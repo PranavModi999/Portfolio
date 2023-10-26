@@ -22,16 +22,10 @@ const OverlayLayout = (props) => {
         />
       )}
       <ul className={styles.items__container}>
-        <li
-          onClick={() => {
-            console.log("item clicked");
-          }}
-        >
-          PROFILE
-        </li>
-        <li>EDUCATION</li>
-        <li>PROJECTS</li>
-        <li>CONTACT</li>
+        <li onClick={() => props.onScrollClick("PROFILE")}>PROFILE</li>
+        <li onClick={() => props.onScrollClick("EXPERIENCE")}>EXPERIENCE</li>
+        <li onClick={() => props.onScrollClick("PROJECTS")}>PROJECTS</li>
+        <li onClick={() => props.onScrollClick("CONTACT")}>CONTACT</li>
       </ul>
     </div>
   );
@@ -45,6 +39,7 @@ const Overlay = (props) => {
         props.overlayState &&
         ReactDOM.createPortal(
           <OverlayLayout
+            onScrollClick={props.onScrollClick}
             isCloseVisible={isMobile}
             onClose={props.onClose}
           ></OverlayLayout>,

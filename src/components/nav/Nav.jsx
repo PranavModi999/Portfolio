@@ -9,7 +9,12 @@ const Nav = (props) => {
   return (
     <React.Fragment>
       {!isMobile && <DesktopNav onScrollClick={props.onScrollClick} />}
-      {isMobile && <MobileNav onClose={props.onClose} />}
+      {isMobile && (
+        <MobileNav
+          onScrollClick={props.onScrollClick}
+          onClose={props.onClose}
+        />
+      )}
     </React.Fragment>
   );
 };

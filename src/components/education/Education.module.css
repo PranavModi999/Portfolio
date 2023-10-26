@@ -40,3 +40,9 @@
   background-color: #2cc77c;
   /* animation: scrollLine 6s linear; */
 }
+
+@media screen and (max-width: 480px) {
+  .timeline_container::after {
+    display: none;
+  }
+}

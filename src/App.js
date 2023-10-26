@@ -45,7 +45,7 @@ function App() {
   };
   return (
     <React.Fragment>
-      <Overlay overlayState={overlayState} onClose={overlayCloseHandler} />
+      <Overlay overlayState={overlayState} onScrollClick={scrollClickHandler} onClose={overlayCloseHandler} />
       <Nav onClose={overlayCloseHandler} onScrollClick={scrollClickHandler} />
       <div className={styles.parallax_wrapper}>
         <div className={styles.profile_container}>

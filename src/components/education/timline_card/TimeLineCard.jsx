@@ -1,5 +1,5 @@
 import React from "react";
-import { isMobile } from "react-device-detect";
+import { useMediaQuery } from "react-responsive";
 
 import styles from "./TimelineCard.module.css";
 
@@ -11,7 +11,8 @@ const TimeLineCard = ({
   position,
   date,
 }) => {
-  if (isMobile) position = "left";
+  const isMobileSize = useMediaQuery({ query: "(max-width:480px)" });
+  if (isMobileSize) position = "left";
   return (
     <div
       className={`${styles.card_container} ${

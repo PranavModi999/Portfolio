@@ -50,8 +50,8 @@ const PortfolioFooter = React.forwardRef(({ onScrollClick }, ref) => {
         <div className={styles["right-column"]}>
           <h4>Contact Us</h4>
           <div>
-            <p>Email: info@lithaven.com</p>
-            <p>Phone: (123) 456-7890</p>
+            <p>Email: pranavmodi767@gmail.com</p>
+            <p>Phone: (647) 897-8370</p>
           </div>
         </div>
       </div>

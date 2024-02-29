@@ -22,8 +22,8 @@ const Education = React.forwardRef((_, ref) => {
       <section className={styles.proficiency_container}>
         <ProgressBar title="Frontend/Design" progress="90%" />
         <ProgressBar title="Mobile App Development" progress="95%" />
-        <ProgressBar title="Backend development" progress="75%" />
-        <ProgressBar title="Programming" progress="70%" />
+        <ProgressBar title="Backend development" progress="85%" />
+        <ProgressBar title="Programming" progress="90%" />
       </section>
       <h1 className={styles.title}>My Educational Journey</h1>
       <div className={styles.timeline_container}>

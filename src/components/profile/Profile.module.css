@@ -49,8 +49,7 @@
   justify-content: center;
   font-size: 1.2rem;
   width: 100%;
-  align-items: flex-end;
-  margin-bottom: 10%;
+  align-items: center;
   transform: rotateZ(-5deg);
 }
 .middle_col {
@@ -60,9 +59,13 @@
   justify-content: space-between;
 }
 .profile_main {
-  width: 28%;
-  margin-top: 6%;
-  margin-right: 10%;
+  width: 100%;
+  display: flex;
+  margin-top: 15%;
+}
+.profile_main img{
+  width: 80%;
+  margin-bottom: 10%;
 }
 .left_container {
   display: flex;

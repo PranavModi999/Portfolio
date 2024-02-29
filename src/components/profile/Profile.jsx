@@ -1,5 +1,5 @@
 import React from "react";
-import ProfileMain from "./profile_main.png";
+import ProfileMain from "./profile_main_2.png";
 
 import styles from "./Profile.module.css";
 
@@ -17,7 +17,9 @@ const Profile = React.forwardRef((_, ref) => {
             <img className={styles.location} src={locationIcon} alt="" />
             <p>Kitchener, Ontario</p>
           </div>
-          <img className={styles.profile_main} src={ProfileMain} alt="" />
+          <div className={styles.profile_main}>
+            <img src={ProfileMain} alt="" />
+          </div>
         </div>
         <h3 className={styles.title}>Hey, I am Pranav Modi</h3>
         <p className={styles.content}>

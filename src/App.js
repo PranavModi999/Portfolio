@@ -1,20 +1,13 @@
 import React, { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Overlay from "./UI/Overlay/Overlay";
-import Education from "./components/education/Education";
+import Home from "./components/Home/Home";
 import Nav from "./components/nav/Nav";
-import Profile from "./components/profile/Profile";
-
-import styles from "./App.module.css";
-import PortfolioFooter from "./components/footer/PortfolioFooter";
-import Project from "./components/project/Project";
 
 function App() {
   const [overlayState, setOverlayState] = useState(false);
 
-  const profileRef = React.createRef();
-  const experienceRef = React.createRef();
-  const projectRef = React.createRef();
   const footerRef = React.createRef();
 
   const overlayCloseHandler = () => {
@@ -22,6 +15,9 @@ function App() {
       return !state;
     });
   };
+  const profileRef = React.createRef();
+  const experienceRef = React.createRef();
+  const projectRef = React.createRef();
 
   const scrollClickHandler = (type) => {
     console.log("scroll clicked type:", type);
@@ -50,6 +46,7 @@ function App() {
         break;
     }
   };
+
   return (
     <React.Fragment>
       <Overlay
@@ -58,16 +55,22 @@ function App() {
         onClose={overlayCloseHandler}
       />
       <Nav onClose={overlayCloseHandler} onScrollClick={scrollClickHandler} />
-      <div className={styles.parallax_wrapper}>
-        <div className={styles.profile_container}>
-          <Profile ref={profileRef} />
-        </div>
-        <div className={styles.education_container}>
-          <Education ref={experienceRef} />
-        </div>
-        <Project ref={projectRef} />
-        <PortfolioFooter onScrollClick={scrollClickHandler} ref={footerRef} />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home
+                profileRef={profileRef}
+                experienceRef={experienceRef}
+                projectRef={projectRef}
+                footerRef={footerRef}
+                onScrollClick={scrollClickHandler}
+              />
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </React.Fragment>
   );
 }

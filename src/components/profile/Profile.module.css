@@ -63,7 +63,7 @@
   display: flex;
   margin-top: 15%;
 }
-.profile_main img{
+.profile_main img {
   width: 80%;
   margin-bottom: 10%;
 }
@@ -114,6 +114,14 @@
     width: 50%;
     align-self: center;
     margin: 0 auto;
+  }
+  .profile_main img {
+    width: 160%;
+  }
+  .middle_col {
+    gap: 1rem;
+    margin-top: 8rem;
+    flex-direction: column;
   }
   .left_container {
     margin: 0 auto;

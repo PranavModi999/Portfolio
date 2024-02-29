@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e3fb657.css",
-    "main.js": "/static/js/main.28e3a9ab.js",
+    "main.css": "/static/css/main.fea63188.css",
+    "main.js": "/static/js/main.1f55e575.js",
     "static/media/profile_main_2.png": "/static/media/profile_main_2.b95a012608d4ac36fad9.png",
     "static/media/litHaven.png": "/static/media/litHaven.3016aa9cfe05ebb61e33.png",
     "static/media/skycrest.png": "/static/media/skycrest.f9afd277cfee5ec43001.png",
@@ -19,11 +19,11 @@
     "static/media/location.svg": "/static/media/location.48b92ed28fe08807a3431668e34ac7eb.svg",
     "static/media/close_icon.svg": "/static/media/close_icon.8ca3cd5e99711be7bee6932cc8decbb7.svg",
     "static/media/hamburger_icon.svg": "/static/media/hamburger_icon.0d3c31af19b9c297e9457042ec495ba1.svg",
-    "main.7e3fb657.css.map": "/static/css/main.7e3fb657.css.map",
-    "main.28e3a9ab.js.map": "/static/js/main.28e3a9ab.js.map"
+    "main.fea63188.css.map": "/static/css/main.fea63188.css.map",
+    "main.1f55e575.js.map": "/static/js/main.1f55e575.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e3fb657.css",
-    "static/js/main.28e3a9ab.js"
+    "static/css/main.fea63188.css",
+    "static/js/main.1f55e575.js"
   ]
 }

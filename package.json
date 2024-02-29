@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://PranavModi999.github.io/Portfolio",
+  "homepage": "https://pranavmodi.site",
   "dependencies": {
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
@@ -10,7 +10,7 @@
     "react-responsive": "^9.0.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build --cname pranavmodi.site",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

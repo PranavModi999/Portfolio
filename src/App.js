@@ -27,10 +27,17 @@ function App() {
     console.log("scroll clicked type:", type);
     switch (type) {
       case "PROFILE":
-        profileRef.current.scrollIntoView({ behavior: "smooth" });
+        profileRef.current.scrollIntoView({
+          behavior: "smooth",
+        });
         break;
       case "EXPERIENCE":
-        experienceRef.current.scrollIntoView({ behavior: "smooth" });
+        // experienceRef.current.scrollIntoView({ behavior: "smooth" });
+        const pos = experienceRef.current.getBoundingClientRect();
+
+        window.scrollTo({
+          top: pos,
+        });
         break;
       case "PROJECTS":
         projectRef.current.scrollIntoView({ behavior: "smooth" });
@@ -45,7 +52,11 @@ function App() {
   };
   return (
     <React.Fragment>
-      <Overlay overlayState={overlayState} onScrollClick={scrollClickHandler} onClose={overlayCloseHandler} />
+      <Overlay
+        overlayState={overlayState}
+        onScrollClick={scrollClickHandler}
+        onClose={overlayCloseHandler}
+      />
       <Nav onClose={overlayCloseHandler} onScrollClick={scrollClickHandler} />
       <div className={styles.parallax_wrapper}>
         <div className={styles.profile_container}>
